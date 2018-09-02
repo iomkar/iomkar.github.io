@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <!--For Body Font-->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!--For Header Font-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--For responsive -->
+
+  <style>
+    .header {
+      font-family: 'Dancing Script', cursive;
+      /* header font */
+      text-align: center;
+      /* align center */
+    }
+
+    .header img
+    /* header image size */
+
+      {
+      width: 2.500em;
+      /* 40px */
+      height: 2.500em;
+    }
+
+    .header h2 {
+      font-size: 1.875em/* 30px */
+    }
+
+    .header p {
+      font-size: 1.250em;
+
+      /* 20px */
+    }
+
+
+
+    .navi {
+      border-bottom: 0.313em double white;
+      /* 5px border for navigation */
+      border-top: 0.313em double white;
+      /* 5px border for navigation */
+      /* Gradient background color  for navigation*/
+      background: #B3FFAB;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+    ul.navi {
+      list-style-type: none;
+      /*Removes bullets*/
+      margin: 0;
+      /* removes all margin*/
+      padding: 0;
+      /* removes all default padding*/
+      background-color: white;
+      /*making navigation sticky*/
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      /*makes navigation bar appear on top*/
+      justify-content: center;
+      /*navigation appear in center*/
+      display: flex;
+      z-index: 2;
+      /*nav appears on top of other content*/
+    }
+
+    .navi a {
+      display: block;
+      /*makes links blocks for navigation menu*/
+      color: black;
+      /*color for text*/
+      text-align: center;
+      /*aligns text to center*/
+      padding: 0.875em 1em;
+      /*0.875em-14px 16px-1em  gives padding(spacing) between each menu item*/
+      text-decoration: none;
+      /*removes underline and other default link styles*/
+    }
+
+    .navi a:hover
+    /*hovering = mouse pointer over item*/
+
+      {
+      background-color: white;
+      /*after hovering white color background*/
+      color: black;
+      /*after hovering black color text*/
+    }
+
+    .active
+    /*active class puts current page menu color*/
+
+      {
+      background-color: white;
+      color: black;
+    }
+  @media screen and (max-width: 400px) {
+      .navi {
+        font-size: 0.750em;
+      }
+    }
+</style>
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <h2>Food <span> <img src="https://i2.wp.com/omkar99212238.files.wordpress.com/2018/09/dishes-295282_1280.png?ssl=1&w=450"></span>Adda</h2>
+    <p><span style="background-color:#e6e6e6;">Eat More Worry Less!</span></p>
+  </div>
+
+  <ul class="navi">
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="signup/register.html">Teacher</a></li>
+    <li><a href="signup/sregister.html">Student</a></li>
+    <li><a href="login.html">login</a></li>
+    <li><a href="contact/contact1.html">Contact</a></li>
+  </ul>
+  <br>
+  <br>
+</body>
+</html>

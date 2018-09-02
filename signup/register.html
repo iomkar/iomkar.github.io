@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <!--For Body Font-->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!--For Header Font-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--For responsive -->
+
+  <style>
+    .header {
+      font-family: 'Dancing Script', cursive;
+      /* header font */
+      text-align: center;
+      /* align center */
+    }
+
+    .header img
+    /* header image size */
+
+      {
+      width: 2.500em;
+      /* 40px */
+      height: 2.500em;
+    }
+
+    .header h2 {
+      font-size: 1.875em/* 30px */
+    }
+
+    .header p {
+      font-size: 1.250em;
+      
+      /* 20px */
+    }
+    
+
+
+    .navi {
+      border-bottom: 0.313em double white;
+      /* 5px border for navigation */
+      border-top: 0.313em double white;
+      /* 5px border for navigation */
+      /* Gradient background color  for navigation*/
+      background: #B3FFAB;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+    ul.navi {
+      list-style-type: none;
+      /*Removes bullets*/
+      margin: 0;
+      /* removes all margin*/
+      padding: 0;
+      /* removes all default padding*/
+      background-color: white;
+      /*making navigation sticky*/
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      /*makes navigation bar appear on top*/
+      justify-content: center;
+      /*navigation appear in center*/
+      display: flex;
+      z-index: 2;
+      /*nav appears on top of other content*/
+    }
+
+    .navi a {
+      display: block;
+      /*makes links blocks for navigation menu*/
+      color: black;
+      /*color for text*/
+      text-align: center;
+      /*aligns text to center*/
+      padding: 0.875em 1em;
+      /*0.875em-14px 16px-1em  gives padding(spacing) between each menu item*/
+      text-decoration: none;
+      /*removes underline and other default link styles*/
+    }
+
+    .navi a:hover
+    /*hovering = mouse pointer over item*/
+
+      {
+      background-color: white;
+      /*after hovering white color background*/
+      color: black;
+      /*after hovering black color text*/
+    }
+
+    .active
+    /*active class puts current page menu color*/
+
+      {
+      background-color: white;
+      color: black;
+    }
+
+
+    
+    
+    
+    
+  
+    
+    
+    
+
+    /*responsive */
+
+   .navi .icon {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .navi a:not(:first-child) {display: none;}
+  .navi a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navi {
+    font-size:0.750em;
+  }
+    }
+    
+    
+    
+    body {
+    font-family: 'Indie Flower', cursive;    
+    color:black;
+    }
+ 
+    
+    
+    
+    table{margin: auto;}
+    td{text-align: left;}
+        
+    .frmbtn{
+    display: block; margin: auto; margin-top: 5px;
+    background-color: #12FFF7;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 335px;    
+    }
+        
+    form{display: block;margin: auto; background: white; width: 350px;height: 600px; }
+    td{padding: 5px}
+    .frmbtn:hover{color: #12FFF7;
+    background: rgba(0,0,0,0.5)}
+        
+        
+        .f1{width: 335px; height: 40px; border-radius: 10px; font-family: Helvetica; font-size: 15px; 
+            border: none;
+            background: rgba(0,0,0,0);
+            border-bottom: solid 3px black;
+            color: black;
+        }
+        ::-webkit-input-placeholder {
+   color: #12FFF7;
+}
+        .f1:focus{
+        border: solid 2px #12FFF7; outline: none;
+        }
+
+        
+        
+        .formbg{
+            background-image: url("https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/chefs-749563_1920.jpg");
+             background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    
+    
+    
+  </style>
+  <script src="../signup/validate.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <div class="header">
+
+    <h2>Food <span> <img src="https://i2.wp.com/omkar99212238.files.wordpress.com/2018/09/dishes-295282_1280.png?ssl=1&w=450"></span>Adda</h2>
+    <p><span style="background-color:#e6e6e6;">Eat More Worry Less!</span></p>
+  </div>
+
+  <ul class="navi" >
+    <li><a  href="home.html">Home</a></li>
+    <li><a class="active" href="signup/register.html">Teacher</a></li>
+    <li><a href="signup/sregister.html">Student</a></li>
+    <li><a href="login.html">login</a></li>
+    <li><a href="contact/contact1.html">Contact</a></li>
+  </ul>
+  <br>
+
+
+  
+ 
+  <h1 style="text-align:center;">REGISTRATION FORM</h1>
+<div class="formbg">
+<form name="form1" action="www.google.com" onsubmit="return validateForm()" method="post">
+<table >
+    <tr><td> <input type="text" name="fname" maxlength="40" placeholder="Full Name" class="f1"></td></tr>
+<tr><td><input type="text" name="email" placeholder="Email: example@domain.com" class="f1"></td></tr>
+<tr><td> <textarea wrap="physical" name="addr" placeholder="Address ) ( , . Allowed" class="f1"></textarea></td></tr>
+    
+    <tr><td> <input type="text" name="pin" maxlength="10" placeholder="Pin Code" class="f1"></td></tr>
+    
+    
+<tr><td> <input type="text" name="mobno" maxlength="10" placeholder="Mobile Number" class="f1"></td></tr>
+<tr><td>DOB <input type="date" name="dob" placeholder="DOB"></td></tr>
+<tr><td>Choose area
+<select name="area">
+  <option value="borivali">borivali</option>
+  <option value="dahisar">dahisar</option>
+  <option value="kandivali">kandivali</option>
+  <option value="andheri">andheri</option>
+    </select></td></tr>
+<tr><td>Gender
+    <input type="radio" name="opt1" id="btn1" value="m">Male
+    <input type="radio" name="opt1" id="btn2" value="f">Female</td></tr>
+    <tr><td>Speciality<input type="checkbox" name="chk1" value="nonv" id="cb1" >Non-Veg
+        <input type="checkbox" name="chk2" id="cb2" value="veg">Vegetarian</td></tr>
+    <tr><td><input type="password" name="pass1" placeholder="Password Must be at least 6 units long" class="f1"> </td></tr>
+    <tr><td><input type="password" name="pass2" placeholder="Confirm Password" class="f1"></td></tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit" class="frmbtn">
+    <input type="reset" value="Reset" class="frmbtn" onclick="return confirmit()">
+</form>
+    </div>
+    
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+  <br>
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Company</h1>
+    <ul>
+      <li>About</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  
+  
+
+  <div class="col">
+    <h1 style="color:black;">Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Address: Mount Poinsur, S.V.P. Road, Near Bhagwati Hospital, Borivali West, Mumbai, Maharashtra 400103</li>
+      <li>email:omkarsurve4@gmail.com</li>
+     
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+  
+  
+</body>
+</html>
