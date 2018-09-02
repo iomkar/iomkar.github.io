@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <!--For Body Font-->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!--For Header Font-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--For responsive -->
+
+  <style>
+    .header {
+      font-family: 'Dancing Script', cursive;
+      /* header font */
+      text-align: center;
+      /* align center */
+    }
+
+    .header img
+    /* header image size */
+
+      {
+      width: 2.500em;
+      /* 40px */
+      height: 2.500em;
+    }
+
+    .header h2 {
+      font-size: 1.875em/* 30px */
+    }
+
+    .header p {
+      font-size: 1.250em;
+
+      /* 20px */
+    }
+
+
+
+    .navi {
+      border-bottom: 0.313em double white;
+      /* 5px border for navigation */
+      border-top: 0.313em double white;
+      /* 5px border for navigation */
+      /* Gradient background color  for navigation*/
+      background: #B3FFAB;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #12FFF7, #B3FFAB);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+    ul.navi {
+      list-style-type: none;
+      /*Removes bullets*/
+      margin: 0;
+      /* removes all margin*/
+      padding: 0;
+      /* removes all default padding*/
+      background-color: white;
+      /*making navigation sticky*/
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      /*makes navigation bar appear on top*/
+      justify-content: center;
+      /*navigation appear in center*/
+      display: flex;
+      z-index: 2;
+      /*nav appears on top of other content*/
+    }
+
+    .navi a {
+      display: block;
+      /*makes links blocks for navigation menu*/
+      color: black;
+      /*color for text*/
+      text-align: center;
+      /*aligns text to center*/
+      padding: 0.875em 1em;
+      /*0.875em-14px 16px-1em  gives padding(spacing) between each menu item*/
+      text-decoration: none;
+      /*removes underline and other default link styles*/
+    }
+
+    .navi a:hover
+    /*hovering = mouse pointer over item*/
+
+      {
+      background-color: white;
+      /*after hovering white color background*/
+      color: black;
+      /*after hovering black color text*/
+    }
+
+    .active
+    /*active class puts current page menu color*/
+
+      {
+      background-color: white;
+      color: black;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+    @media screen and (max-width: 400px) {
+      .navi {
+        font-size: 0.750em;
+      }
+    }
+
+
+
+    body {
+      font-family: 'Indie Flower', cursive;
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <h2>Food <span> <img src="https://i2.wp.com/omkar99212238.files.wordpress.com/2018/09/dishes-295282_1280.png?ssl=1&w=450"></span>Adda</h2>
+    <p><span style="background-color:#e6e6e6;">Eat More Worry Less!</span></p>
+  </div>
+
+  <ul class="navi">
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="signup/register.html">Teacher</a></li>
+    <li><a href="signup/sregister.html">Student</a></li>
+    <li><a href="login.html">login</a></li>
+    <li><a href="contact/contact1.html">Contact</a></li>
+  </ul>
+  <br>
+  <br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <div class="text">
+      
+        <button class="button">Submit Recipe</button></a></div>
+      <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/cook.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <div class="text">
+      <a href="signup/sregister.html" stype=""> <button class="button">Submit Recipe</button></a></div>
+      <img src="https://i0.wp.com/omkar99212238.files.wordpress.com/2018/09/asparagus-2169305_1920.jpg" style="width:100%">
+
+    </div>
+  </div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+
+  <p>
+    What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+    specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+    model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
+    to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+    the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+    Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+    1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+    English versions from the 1914 translation by H. Rackham. Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+    necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+    always free from repetition, injected humour, or non-characteristic words etc.
+
+  </p>
+
+  <ul class="cat">
+
+    <li>
+
+      <a href="#veg">
+        <div class="catimg">
+          <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/casserole-dish-2776735_1920.jpg?ssl=1&w=450" alt="Vegetarian" style="width:100%">
+          <div class="cattext">
+            <p>Vegetarian</p>
+          </div>
+        </div>
+      </a>
+
+    </li>
+
+    <li>
+      <a href="#nveg">
+        <div class="catimg">
+          <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/dinner-1246287.jpg?ssl=1&w=450" alt="Non-Vegetarian" style="width:100%">
+          <div class="cattext">
+            <p>Non-Vegetarian</p>
+          </div>
+        </div>
+      </a>
+
+    </li>
+    <li>
+      <a href="#nveg">
+        <div class="catimg">
+          <img src="https://i0.wp.com/omkar99212238.files.wordpress.com/2018/09/asparagus-1307604_1920.jpg?ssl=1&w=450" alt="Non-Vegetarian" style="width:100%">
+          <div class="cattext">
+            <p>Diet</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <br>
+  <br>
+
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+      <div class="col">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1 style="color:black;">Support</h1>
+        <ul>
+          <li>Contact us</li>
+          <li>Address: Mount Poinsur, S.V.P. Road, Near Bhagwati Hospital, Borivali West, Mumbai, Maharashtra 400103</li>
+          <li>email:omkarsurve4@gmail.com</li>
+
+        </ul>
+      </div>
+      <div class="col social">
+        <h1>Social</h1>
+        <ul>
+          <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- END OF FOOTER -->
+
+</body>
+
+</html>
