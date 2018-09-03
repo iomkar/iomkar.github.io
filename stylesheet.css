@@ -1,15 +1,16 @@
- div.catimg{
-  width: 250px;
-  box-shadow: 10px 10px 5px 5px grey;
-  text-align: center;
+ div.catimg  
+{
+  width: 250px; /* creates box of 250px */
+  box-shadow: 10px 10px 5px 5px grey; /* gives box shadow */
+  text-align: center; /* align text center */
 }
 
 div.cattext {
-  padding: 10px;
+  padding: 10px; /* gives padding = spacing   */
 }
     
     div.catimg:hover{
-        transform: scale(1.2);
+        transform: scale(1.2); /* when mouse is on content it increases in size */
     }    
 
 .cat {
@@ -30,9 +31,11 @@ div.cattext {
      padding-left: 12%;
       padding-top: 2%;
 }
-.cat a {
-  color: black;
-text-decoration: none;
+
+.cat a 
+{
+  color: black; /* links of category have color black */
+text-decoration: none; /* Rremoves undderline and other default decoration */
 }
 
 @media (max-width: 960px) and (min-width: 501px) {
@@ -47,27 +50,17 @@ text-decoration: none;
    
 }
 
-@media (max-width: 960px) {
-  .cat {
-    display: block;
-  }
-  
+
   .cat li {
-    display: inline-block;
+    display: inline-block;  /* shows list in single line */
   }
 }
  .cat li a:hover {
-    background-color:white;
+    background-color:white; /* when mouse over changes color */
     color:black;
 }  
     
     
-
-
-
-
-
-
 
 
 
@@ -177,6 +170,7 @@ text-decoration: none;
     width: 100%;
   }
 }
+/*footer end*/
 
 
 /*slideshow*/
@@ -193,17 +187,16 @@ img {vertical-align: middle;}
 }
 
 /* Caption text */
-.text {
+.text 
+{
   color: #f2f2f2;
   font-size: 15px;
-
-     display:block;
+    display:block;
   position:absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-   
-    padding-bottom: 50px;
+padding-bottom: 50px;
    
 }
     
@@ -253,13 +246,13 @@ img {vertical-align: middle;}
 /*slide show button*/
 .button {
     background-color: #12FFF7; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+    border: none; /*removes border*/
+    color: white; /*txt color white*/
+    padding: 15px 32px; /*spcaing*/
+    text-align: center; 
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; 
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: pointer; /*mouse pointer*/
 }

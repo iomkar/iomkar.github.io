@@ -2,26 +2,29 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <!--For Body Font-->
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-  <!--For Header Font-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--For responsive -->
+  <link rel="stylesheet" href="stylesheet.css"> <!--For css style -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"><!--For Body Font-->
+  
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">  <!--For Header Font-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--For responsive -->
+  
 
   <style>
+      
+      /*logo title start */
     .header {
-      font-family: 'Dancing Script', cursive;
-      /* header font */
-      text-align: center;
-      /* align center */
+      font-family: 'Dancing Script', cursive;/* header font */
+      
+      text-align: center;/* align center */
+      
     }
 
+      
+      
     .header img
     /* header image size */
-
       {
       width: 2.500em;
       /* 40px */
@@ -29,17 +32,16 @@
     }
 
     .header h2 {
-      font-size: 1.875em/* 30px */
+      font-size: 1.875em;/* 30px */
     }
 
     .header p {
       font-size: 1.250em;
-
       /* 20px */
     }
+/*logo title end */
 
-
-
+/*Navigation Menu Start */
     .navi {
       border-bottom: 0.313em double white;
       /* 5px border for navigation */
@@ -91,7 +93,6 @@
 
     .navi a:hover
     /*hovering = mouse pointer over item*/
-
       {
       background-color: white;
       /*after hovering white color background*/
@@ -101,77 +102,88 @@
 
     .active
     /*active class puts current page menu color*/
-
       {
       background-color: white;
       color: black;
     }
 
+/*Navigation Menu end */
 
 
-
-
-
-
-
-
-
-
+/*Responsive Media Query  Start */
     
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 400px) /*for screen size 400px width */
+    {
       .navi {
-        font-size: 0.750em;
+        font-size: 0.750em;/*12px*/
       }
     }
-
-
-
+      
+/*For Body Font*/
     body {
       font-family: 'Indie Flower', cursive;
       color: black;
     }
+      
+      
+      /*Text shadow*/
+         h1.cattext {
+    text-shadow: 2px 2px #B3FFAB;
+}
+      
+      
   </style>
 
+    
+ 
 </head>
 
 <body>
-
+<!--logo & title start -->
   <div class="header">
 
     <h2>Food <span> <img src="https://i2.wp.com/omkar99212238.files.wordpress.com/2018/09/dishes-295282_1280.png?ssl=1&w=450"></span>Adda</h2>
-    <p><span style="background-color:#e6e6e6;">Eat More Worry Less!</span></p>
+    <p><span style="background-color:#e6e6e6;">Eat More Worry Less!</span></p><!--span is used to to give background color only to text-->
   </div>
-
-  <ul class="navi">
-    <li><a class="active" href="home.html">Home</a></li>
+<!--logo & title end -->
+    
+    
+    <!--navigation bar start -->
+    
+  <ul class="navi"> 
+    <li><a class="active" href="index.html">Home</a></li><!--active is used to show active page on menu -->
     <li><a href="signup/register.html">Teacher</a></li>
     <li><a href="signup/sregister.html">Student</a></li>
     <li><a href="login.html">login</a></li>
     <li><a href="contact/contact1.html">Contact</a></li>
   </ul>
+    <!--nav bar end -->
   <br>
   <br>
+    
+    
+    <!--slideshow star -->
   <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <div class="numbertext">1 / 2</div>
+      <div class="numbertext">1 / 2</div>     <!--number at top left -->
       <div class="text">
-      
-        <button class="button">Submit Recipe</button></a></div>
-      <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/cook.jpg" style="width:100%">
+       <a href="signup/sregister.html" > 
+        <button class="button">Submit Recipe</button></a>    <!--button on image --></div>
+      <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/cook.jpg" style="width:100%">    <!--image that should appear -->
 
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides fade">    <!--read above comments, same as above -->
       <div class="numbertext">2 / 2</div>
       <div class="text">
-      <a href="signup/sregister.html" stype=""> <button class="button">Submit Recipe</button></a></div>
+      <a href="signup/sregister.html"> <button class="button">Submit Recipe</button></a></div>
       <img src="https://i0.wp.com/omkar99212238.files.wordpress.com/2018/09/asparagus-2169305_1920.jpg" style="width:100%">
 
     </div>
   </div>
-  </div>
 
+    <!--dots below image -->
   <div style="text-align:center">
     <span class="dot"></span>
     <span class="dot"></span>
@@ -198,32 +210,18 @@
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
   </script>
+    <!--slideshow end -->
+  
+<h1 class="cattext">Category</h1>  <!--heading above -->
+  
+    <ul class="cat">  <!--unordered list-->
 
-  <p>
-    What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-    specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
-    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-    model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
-    to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
-    the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-    Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-    1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
-    English versions from the 1914 translation by H. Rackham. Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
-    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-    necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
-    always free from repetition, injected humour, or non-characteristic words etc.
+    <li>              <!--list item -->
 
-  </p>
-
-  <ul class="cat">
-
-    <li>
-
-      <a href="#veg">
+      <a href="#veg">      
         <div class="catimg">
           <img src="https://i1.wp.com/omkar99212238.files.wordpress.com/2018/09/casserole-dish-2776735_1920.jpg?ssl=1&w=450" alt="Vegetarian" style="width:100%">
           <div class="cattext">
